@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MapsActivity">
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        app:iconifiedByDefault="false"
+        android:background="@drawable/shape"
+        app:queryHint="Search Here"
+        android:visibility="gone"
+        android:id="@+id/searchview"/>
+    <fragment
+
+        android:id="@+id/map"
+
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+        <Button
+            android:id="@+id/idbtnhybridmap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/mapshape"
+            android:singleLine="false"
+            android:textColor="@color/white"
+            android:text="Hybrid"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/idbtnsatellitemap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/mapshape"
+            android:textColor="@color/white"
+            android:text="Satellite"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/idbtnterrainmap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/mapshape"
+            android:singleLine="false"
+            android:text="Terrain"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btnpoyline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/mapshape"
+            android:singleLine="false"
+            android:text="Get Route"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

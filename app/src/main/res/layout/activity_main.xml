@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/login"
+
+    android:gravity="center"
+    android:paddingHorizontal="20dp"
+    tools:context=".MainActivity">
+
+
+    <!--<EditText
+        android:id="@+id/edtusername"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="@color/white"
+        android:hint="user name"
+        android:paddingLeft="16dp"
+
+        android:drawablePadding="16dp"
+        android:drawableStart="@drawable/ic_baseline_perm_identity_24"
+        android:drawableTint="@color/purple_500"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="@color/white"
+        app:endIconMode="password_toggle"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/purple_500"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:hint="User ID"
+        app:shapeAppearance="@style/Rounded"
+        app:startIconDrawable="@drawable/ic_baseline_perm_identity_24"
+        app:startIconTint="@color/purple_500">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/edtusername"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:shapeAppearance="@style/Rounded"
+        android:layout_marginStart="16dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/purple_500"
+
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/purple_500">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtpassword"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnlogin"
+        android:layout_gravity="center_horizontal"
+        android:text="Log in"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape"/>
+
+
+
+</LinearLayout>
